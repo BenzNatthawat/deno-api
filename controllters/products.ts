@@ -2,23 +2,23 @@ import { Product } from '../types.ts'
 
 let products: Product[] = [
   {
-    id: 1,
-    name: "Deno One",
+    id: '1',
+    name: 'Deno One',
     price: 100.05
   },
   {
-    id: 2,
-    name: "Deno Two",
+    id: '2',
+    name: 'Deno Two',
     price: 100
   },
   {
-    id: 3,
-    name: "Deno Three",
+    id: '3',
+    name: 'Deno Three',
     price: 1045.5
   },
   {
-    id: 4,
-    name: "Deno Four",
+    id: '4',
+    name: 'Deno Four',
     price: 85.5
   },
 ]
