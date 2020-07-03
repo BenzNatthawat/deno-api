@@ -1,8 +1,9 @@
 import { Router } from 'https://deno.land/x/oak/mod.ts'
-import { getProducts } from './controllters/products.ts'
+import { getProducts, getProduct } from './controllters/products.ts'
 
 const router = new Router()
 
 router.get('/api/products', getProducts)
+  .get('/api/products/:id', getProduct)
 
 export default router
