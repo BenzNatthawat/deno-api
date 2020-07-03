@@ -24,6 +24,8 @@ $`deno run --allow-net server.ts`
 *http://localhost:5000/api/products*
 
 
+ก่อนรันแต่ละ workshop ให้ stop run deno ก่อนแล้วรันใหม่ น่ะ ^^
+
 ### workshop1 
 @get => localhost:5000/api/products
 
