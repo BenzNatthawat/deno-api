@@ -33,4 +33,25 @@ const getProducts = ({ response }: { response: any }) => {
   }
 }
 
-export { getProducts }
+// @desc  Get single products
+// @route Get /api/products/:id
+const getProduct = ({ params, response }: { params: { id: string }, response: any }) => {
+  const product: Product | undefined = products.find(p => p.id === params.id)
+
+  if (product) {
+    response.status = 200
+    response.body = {
+      success: true,
+      data: products.find(p => p.id === params.id)
+    }
+  } else {
+    response.status = 404
+    response.body = {
+      success: false,
+      msg: 'No product'
+    }
+  }
+
+}
+
+export { getProducts, getProduct }
