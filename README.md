@@ -36,3 +36,10 @@ body => {
     "name": "test",
     "price": 156.15
 }
+
+### workshop3
+@put => localhost:5000/api/products/{:id} => localhost:5000/api/products/1
+body => {
+    "name": "test",
+    "price": 156.15
+}
