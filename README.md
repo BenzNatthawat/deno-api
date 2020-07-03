@@ -22,3 +22,7 @@ typescript 3.9.2*
 $`deno run --allow-net server.ts`
 
 *http://localhost:5000/api/products*
+
+
+### workshop1 
+@get => localhost:5000/api/products
