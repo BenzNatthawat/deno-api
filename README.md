@@ -30,16 +30,19 @@ $`deno run --allow-net server.ts`
 ### workshop2
 @get => localhost:5000/api/products/{:id} => localhost:5000/api/products/2
 
-### workshop2
+### workshop3
 @post => localhost:5000/api/products
 body => {
     "name": "test",
     "price": 156.15
 }
 
-### workshop3
+### workshop4
 @put => localhost:5000/api/products/{:id} => localhost:5000/api/products/1
 body => {
     "name": "test",
     "price": 156.15
 }
+
+### workshop5
+@delete => localhost:5000/api/products/{:id} => localhost:5000/api/products/1

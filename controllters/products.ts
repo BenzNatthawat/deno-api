@@ -100,4 +100,15 @@ const updateProduct = async ({ params, request, response }: { params: { id: stri
   }
 }
 
-export { getProducts, getProduct, addProduct, updateProduct }
+// @desc  Delete product
+// @route Delete /api/products/:id
+const deleteProduct = ({ params, response }: { params: { id: string }, response: any }) => {
+  products = products.filter(p => p.id !== params.id)
+  response.body = {
+    success: true,
+    id: params.id,
+    msg: 'Product removed'
+  }
+}
+
+export { getProducts, getProduct, addProduct, updateProduct, deleteProduct }
